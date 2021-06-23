@@ -1,0 +1,39 @@
+.skills-container {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 10vh;
+    //background-color: grey;
+}
+
+.accordian-container {
+    margin-top: 5vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    //background-color: lightblue;
+    grid-gap: 1em;
+    //background-color: lightblue;
+    justify-items: center;
+}
+
+.accordian-section-container {
+    background-color: lightgreen;
+    width: 100%;
+    display: flex;
+    max-width: 500px;
+}
+
+.accordion-content {
+    //background-color: lightblue;
+    width: 100%;
+}
+
+.accordian-section {
+    background-color: lightcoral;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}

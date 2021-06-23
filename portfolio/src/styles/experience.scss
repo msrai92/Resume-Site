@@ -1,0 +1,31 @@
+.experience-container {
+    min-width: 100%;
+    position: relative;
+    padding-top: 10vh;
+}
+
+.experience-title {
+    //background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+
+
+.timeline-content-container {
+    //background-color: lightblue;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.timeline-subtitle {
+
+}
+
+.timeline-list {
+
+}

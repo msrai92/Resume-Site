@@ -1,0 +1,263 @@
+.landing-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.landing-content {
+    width: 100%;
+    height: 70%;
+    //background-color: #c5c6c7;
+    color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #66FCF1;
+    border-radius: 5px;
+}
+
+.media-icons {
+    //background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-3rem, -50%);
+    opacity: 0;
+    width: 50px;
+    animation: slideIn 2s 4.5s ease forwards;
+}
+
+.landing-aside {
+    //background-color: lightseagreen;
+    margin-left: 50px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.landing-info {
+    //background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-title {
+    //background-color: lightblue;
+    width: 70%;
+    //display: inline-block;
+}
+
+.landing-bio {
+    //background-color: lightgray;
+    width: 70%;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s 4.5s ease forwards;
+}
+
+.landing-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background-color: lightblue;
+}
+
+.bio-text {
+    margin-top: 15px;
+}
+.summary {
+    margin-top: 15px;
+}
+
+.cv-download {
+    margin-top: 30px;
+}
+
+.contact-me-btn {
+    width: 200px;
+    height: 50px;
+}
+
+.title{
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    width: max-content;
+    font-size: 3rem;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -40%);
+}
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background: #1F2833;
+    animation: typeWriter 3s steps(10) 1s forwards;
+}
+
+h1::after {
+    width: .125em;
+    background: #66FCF1;
+    animation: typeWriter 3s steps(10) 1s forwards,
+    blink 700ms steps(10) infinite
+}
+
+@keyframes typeWriter {
+    to { 
+        left: 100% 
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translate(0%, -50%);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .landing-content {
+        height: 100%;
+    }
+    .landing-aside {
+        display: grid;
+        grid-template-areas:
+            "a a a"
+            "b b b";
+        margin: 0;
+    }
+    .landing-info {
+        grid-area: b;
+    }
+    .landing-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .landing-img {
+        grid-area: a;
+        position: relative;
+    }
+ 
+    .selfie {
+        width: 350px;
+    }
+    .media-icons {
+        display: flex;
+        flex-direction: row;
+        //background-color: lightcoral;
+        opacity: 1;
+        top: 100%;
+        left: 50%;
+        transform: translate(-170%, -50%);
+        width: 50px;
+        animation: none;
+    }
+    .scroll-down {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 768px) {
+    .landing-content {
+        height: 100%;
+    }
+    .landing-aside {
+        display: grid;
+        grid-template-areas:
+            "a a a"
+            "b b b";
+        margin: 0;
+    }
+    .landing-info {
+        grid-area: b;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .landing-img {
+        grid-area: a;
+        position: relative;
+    }
+    .selfie {
+        width: 300px;
+    }
+
+ 
+    .media-icons {
+        display: flex;
+        flex-direction: row;
+        //background-color: lightcoral;
+        opacity: 1;
+        top: 100%;
+        left: 50%;
+        transform: translate(-170%, -50%);
+        width: 50px;
+        animation: none;
+    }
+    .scroll-down {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .landing-content {
+        height: 100%;
+    }
+    .landing-aside {
+        display: grid;
+        grid-template-areas:
+            "a a a"
+            "b b b";
+        margin: 0;
+    }
+    .landing-info {
+        grid-area: b;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .landing-img {
+        grid-area: a;
+        position: relative;
+    }
+ 
+    .selfie {
+        width: 250px;
+    }
+
+}
