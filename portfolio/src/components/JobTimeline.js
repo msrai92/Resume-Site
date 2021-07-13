@@ -1,4 +1,6 @@
 import React from 'react';
+import JobDialog from './JobDialog';
+import { WIPRO_INTERNAL, CHEVRON_ODSU, OPEN_FOOT_PRINT, BP_PROJECT } from '../util/Constants';
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
@@ -50,13 +52,13 @@ const JobTimeline = () => {
                             </h3>
                         </div>
                         <div className="timeline-subtitle">
-                            <h4>OSDU project for Chevron through Wipro</h4>
+                            <h4>{WIPRO_INTERNAL.title}</h4>
                         </div>
                         <div className="timeline-date">
-                            <p>08/2019 - 12/2020</p>
+                            <p>{WIPRO_INTERNAL.timeline}</p>
                         </div>
                         <div className="timeline-list"> 
-                            <p>Performed</p>
+                            <JobDialog title={WIPRO_INTERNAL.title} description={WIPRO_INTERNAL.description} />
                         </div>
                     </div>
                 </TimelineContent>
@@ -74,13 +76,13 @@ const JobTimeline = () => {
                             </h3>
                         </div>
                         <div className="timeline-subtitle">
-                            <h4>OSDU project for Chevron through Wipro</h4>
+                            <h4>{CHEVRON_ODSU.title}</h4>
                         </div>
                         <div className="timeline-date">
-                            <p>08/2019 - 12/2020</p>
+                            <p>{CHEVRON_ODSU.timeline}</p>
                         </div>
                         <div className="timeline-list"> 
-                            <p>Performed</p>
+                            <JobDialog title={CHEVRON_ODSU.title} description={CHEVRON_ODSU.description} />
                         </div>
                     </div>
                 </TimelineContent>
@@ -94,17 +96,17 @@ const JobTimeline = () => {
                     <div className="timeline-content-container">
                         <div>
                             <h3>
-                                Open Footprint Project
+                                Open Footprint Forum
                             </h3>
                         </div>
                         <div className="timeline-subtitle">
-                            <h4>OSDU project for Chevron through Wipro</h4>
+                            <h4>{OPEN_FOOT_PRINT.title}</h4>
                         </div>
                         <div className="timeline-date">
-                            <p>08/2019 - 12/2020</p>
+                            <p>{OPEN_FOOT_PRINT.timeline}</p>
                         </div>
                         <div className="timeline-list"> 
-                            <p>Performed</p>
+                            <JobDialog title={OPEN_FOOT_PRINT.title} description={OPEN_FOOT_PRINT.description} />
                         </div>
                     </div>
                 </TimelineContent>
@@ -112,8 +114,26 @@ const JobTimeline = () => {
             <TimelineItem>
                 <TimelineSeparator>
                 <TimelineDot classes={{root: classes.root}} />
+                <TimelineConnector classes={{root: classes.MuiTimeLineSeparator}} />
                 </TimelineSeparator>
-                <TimelineContent>BP Project</TimelineContent>
+                <TimelineContent classes={{root: classes.timelineContent}}>
+                    <div className="timeline-content-container">
+                        <div>
+                            <h3>
+                                BP Refinery Project
+                            </h3>
+                        </div>
+                        <div className="timeline-subtitle">
+                            <h4>{BP_PROJECT.title}</h4>
+                        </div>
+                        <div className="timeline-date">
+                            <p>{BP_PROJECT.timeline}</p>
+                        </div>
+                        <div className="timeline-list"> 
+                            <JobDialog title={BP_PROJECT.title} description={BP_PROJECT.description} />
+                        </div>
+                    </div>
+                </TimelineContent>
             </TimelineItem>
         </Timeline>
     )

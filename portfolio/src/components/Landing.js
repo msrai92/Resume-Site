@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { makeStyles } from '@material-ui/styles'
+import React, { useState } from 'react';
+import { makeStyles } from '@material-ui/styles';
 import { Link } from 'react-scroll';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton'
+import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -10,7 +10,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import selfie from '../img/selfie.svg';
-import classNames from 'classnames'
+import classNames from 'classnames';
 import '../styles/landing.scss';
 
 const useStyles = makeStyles({
@@ -48,7 +48,7 @@ const Landing = () => {
                             </div>
                             <div className="cv-download">
                                 <Button className={classNames(classes.button, 'contact-me-btn')} endIcon={<EmailIcon fontSize="large" />} variant="contained">
-                                    Contact Me
+                                <Link to="contact-me" spy={true} smooth={true} duration={500} delay={500} >Contact Me</Link>
                                 </Button>
                             </div>
                         </div>

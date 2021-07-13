@@ -3,7 +3,7 @@ import { FormButton } from '../util/Buttons';
 import { setAlert } from '../actions/alert';
 import { useForm } from "react-hook-form";
 import { connect } from 'react-redux'; 
-import { Marker, LoadScript, GoogleMap, useJsApiLoader, useLoadScript } from '@react-google-maps/api';
+import Map from './Map';
 import Button from '@material-ui/core/Button';
 import {
     fade,
@@ -16,6 +16,8 @@ import InputBase from '@material-ui/core/InputBase';
 import InputLabel from '@material-ui/core/InputLabel';
 import TextField from '@material-ui/core/TextField';
 import FormControl from '@material-ui/core/FormControl';
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
 import emailjs from 'emailjs-com';
 import classNames from 'classnames';
 import '../styles/contact.scss';
@@ -88,8 +90,9 @@ const Contact = (props) => {
             templateParams.subject = subject;
             templateParams.reply_to = email;
             
-            emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER).then(function(response) {
+            emailjs.send('test', process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER).then(function(response) {
                 console.log('success', response.status, response.text);
+                setAlert('Successfully sent email', 'success')
             }, function(error) {
                 console.log('failed', error);
                 setAlert('Failed to send email', 'danger');
@@ -98,16 +101,16 @@ const Contact = (props) => {
     }
 
     return (
-        <div className="contact-container">
-            <h2>Contact Me</h2>
+        <div name="contact-me" className="contact-container">
+            <h2 >Contact Me</h2>
             <div className="contact-content">
                 <div className="contact-details">
                     <div className="contact-details-item">
-                        <h3>Phone</h3>
+                        <PhoneIcon />
                         <p>(832)-488-4326</p>
                     </div>
                     <div className="contact-details-item">
-                        <h3>Email</h3>
+                        <EmailIcon />
                         <p>m.singh.rai15@gmail.com</p>
                     </div>
                 </div>
@@ -133,6 +136,9 @@ const Contact = (props) => {
                             </div>
                         </form>
                 </div>
+            </div>
+            <div className="map-container">
+                <Map />
             </div>
         </div>
     )

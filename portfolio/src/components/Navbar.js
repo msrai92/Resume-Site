@@ -36,9 +36,14 @@ const Navbar = () => {
                 <Link to="about" spy={true} smooth={true} duration={500} delay={500} activeClass="nav-active-link" onClick={handleClick} className="nav-sub-link">About</Link>
             </li>
             <li className="nav-sub-item">
-                <Link to="experience" spy={true} smooth={true} duration={500} delay={500} activeClass="nav-active-link"  onClick={handleClick} className="nav-sub-link">Experience</Link>
+                <Link to="experience" spy={true} smooth={true} duration={500} delay={500} activeClass="nav-active-link" onClick={handleClick} className="nav-sub-link">Experience</Link>
             </li>
-            
+            <li className="nav-sub-item">
+                <Link to="skills" spy={true} smooth={true} duration={500} delay={500} activeClass="nav-active-link"  onClick={handleClick} className="nav-sub-link">Skills</Link>
+            </li>
+            <li className="nav-sub-item">
+                <Link to="contact-me" spy={true} smooth={true} duration={500} delay={500} activeClass="nav-active-link" onClick={handleClick} className="nav-sub-link">Contact</Link>
+            </li>
         </ul>
         </nav>
     )

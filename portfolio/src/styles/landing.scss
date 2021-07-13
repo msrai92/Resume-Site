@@ -74,10 +74,13 @@
 }
 .summary {
     margin-top: 15px;
+
 }
 
 .cv-download {
     margin-top: 30px;
+    display: flex;
+
 }
 
 .contact-me-btn {
@@ -258,6 +261,21 @@ h1::after {
  
     .selfie {
         width: 250px;
+    }
+
+    .bio-text h3 {
+        text-align: center;
+    }
+
+    .cv-download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summary {
+        text-align: center;
+        margin: 0;
     }
 
 }

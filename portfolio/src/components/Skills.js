@@ -46,8 +46,8 @@ const other = [
 const Skills = () => {
     const classes = useStyles();
     return (
-        <div className="skills-container">
-            <h2>Skills</h2>
+        <div name="skills" className="skills-container">
+            <h2 >Skills</h2>
             <div className="accordian-container">
                 <div className="accordion-content">
                     <Accordion>

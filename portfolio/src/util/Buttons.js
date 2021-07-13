@@ -57,3 +57,18 @@ export const DownloadButton = ({ link, children, styleName, type, btnIcon, ...pr
         </Button>
     )
 }
+
+export const DialogButton = ({ type, onClick, styleName, children, ...props}) => {
+    const classes = useStyles();
+    return (
+        <Button
+        variant="contained"
+        onClick={onClick}
+        type={type || "button"}
+        className={classNames(classes.button, styleName)}
+        {...props}
+        >
+            {children}
+        </Button>
+    )
+}

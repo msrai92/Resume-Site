@@ -5,30 +5,22 @@
     align-items: center;
     position: relative;
     padding-top: 10vh;
+    padding-left: 0;
     //background-color: grey;
 }
 
 .accordian-container {
+    width: 100%;
     margin-top: 5vh;
-    width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    //background-color: lightblue;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
     //background-color: lightblue;
-    justify-items: center;
 }
 
-.accordian-section-container {
-    background-color: lightgreen;
-    width: 100%;
-    display: flex;
-    max-width: 500px;
-}
 
 .accordion-content {
-    //background-color: lightblue;
-    width: 100%;
+    //background-color: lightgreen;
 }
 
 .accordian-section {

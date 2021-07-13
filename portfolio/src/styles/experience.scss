@@ -22,10 +22,30 @@
     align-items: flex-start;
 }
 
+.job-dialog-title {
+    color: 'white';
+    background-color: lightblue;
+}
+
 .timeline-subtitle {
 
 }
 
 .timeline-list {
+
+}
+
+@media screen and (max-width: 500px) {
+    .timeline-content-container h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-subtitle h4 {
+        font-size: .8rem;
+    }
+
+    .dialog-btn {
+        font-size: .6rem !important;
+    }
 
 }
