@@ -30,17 +30,17 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-social">
                 <div>
-                    <IconButton className={classes.root}>
+                    <IconButton onClick={() => window.open('https://www.linkedin.com/in/manvir-rai-b61b52166/', "_blank")} className={classes.root}>
                         <LinkedInIcon fontSize="medium" /> 
                     </IconButton>
                 </div>
                 <div>
-                    <IconButton className={classes.root}>
+                    <IconButton onClick={() => window.open('https://github.com/msrai92', '_blank')} className={classes.root}>
                         <InstagramIcon fontSize="medium" />
                     </IconButton>
                 </div>
                 <div>
-                    <IconButton className={classes.root}>
+                    <IconButton onClick={() => window.open('https://www.instagram.com/mrai713/', '_blank')} className={classes.root}>
                         <GitHubIcon fontSize="medium" />
                     </IconButton>
                 </div>

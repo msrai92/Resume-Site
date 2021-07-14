@@ -84,7 +84,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="cv-down-btn">
-                        <DownloadButton link="../img/logo.svg" styleName="contact-me-btn" btnIcon={<GetAppIcon fontSize="large" />}>
+                        <DownloadButton link="/Manvir S Rai Resume.pdf" styleName="contact-me-btn" btnIcon={<GetAppIcon fontSize="large" />}>
                             Resume
                         </DownloadButton>
                     </div>

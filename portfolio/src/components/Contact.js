@@ -90,7 +90,7 @@ const Contact = (props) => {
             templateParams.subject = subject;
             templateParams.reply_to = email;
             
-            emailjs.send('test', process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER).then(function(response) {
+            emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER).then(function(response) {
                 console.log('success', response.status, response.text);
                 setAlert('Successfully sent email', 'success')
             }, function(error) {

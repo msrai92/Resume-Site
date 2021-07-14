@@ -56,13 +56,13 @@ const Landing = () => {
                     <div className="landing-img">
                         <img src={selfie} alt="selfie" className="selfie" width="400"/>
                         <div className="media-icons">
-                            <IconButton className={classes.root}>
+                            <IconButton onClick={() => window.open('https://www.linkedin.com/in/manvir-rai-b61b52166/', "_blank")} className={classes.root}>
                                 <LinkedInIcon fontSize="large" />
                             </IconButton>
-                            <IconButton className={classes.root}>
+                            <IconButton onClick={() => window.open('https://github.com/msrai92', '_blank')} className={classes.root}>
                                 <GitHubIcon fontSize="large" />
                             </IconButton>
-                            <IconButton className={classes.root}>
+                            <IconButton onClick={() => window.open('https://www.instagram.com/mrai713/', '_blank')} className={classes.root}>
                                 <InstagramIcon fontSize="large" />
                             </IconButton>
                         </div>
