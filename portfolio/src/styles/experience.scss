@@ -1,51 +1,45 @@
 .experience-container {
-    min-width: 100%;
-    position: relative;
-    padding-top: 10vh;
+  min-width: 100%;
+  position: relative;
+  padding-top: 10vh;
 }
 
 .experience-title {
-    //background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    padding: 1em;
+  //background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
 }
 
-
-
 .timeline-content-container {
-    //background-color: lightblue;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  //background-color: lightblue;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .job-dialog-title {
-    color: 'white';
-    background-color: lightblue;
+  color: "white";
+  background-color: lightblue;
 }
 
 .timeline-subtitle {
-
 }
 
 .timeline-list {
-
 }
 
 @media screen and (max-width: 500px) {
-    .timeline-content-container h3 {
-        font-size: 1rem;
-    }
+  .timeline-content-container h3 {
+    font-size: 1rem;
+  }
 
-    .timeline-subtitle h4 {
-        font-size: .8rem;
-    }
+  .timeline-subtitle h4 {
+    font-size: 0.8rem;
+  }
 
-    .dialog-btn {
-        font-size: .6rem !important;
-    }
-
+  .dialog-btn {
+    font-size: 0.6rem !important;
+  }
 }
