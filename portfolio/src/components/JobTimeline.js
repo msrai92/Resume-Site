@@ -53,19 +53,16 @@ const JobTimeline = () => {
         <TimelineContent classes={{ root: classes.timelineContent }}>
           <div className="timeline-content-container">
             <div>
-              <h3>Chevron</h3>
+              <h3>Siepe</h3>
             </div>
             <div className="timeline-subtitle">
-              <h4>{CHEVRON_ODSU.title}</h4>
+              <h4>{SIEPE.title}</h4>
             </div>
             <div className="timeline-date">
-              <p>{CHEVRON_ODSU.timeline}</p>
+              <p>{SIEPE.timeline}</p>
             </div>
             <div className="timeline-list">
-              <JobDialog
-                title={CHEVRON_ODSU.title}
-                description={CHEVRON_ODSU.description}
-              />
+              <JobDialog title={SIEPE.title} description={SIEPE.description} />
             </div>
           </div>
         </TimelineContent>
