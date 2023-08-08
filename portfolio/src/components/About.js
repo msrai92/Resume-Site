@@ -44,10 +44,10 @@ const About = () => {
           <div className="summary-paper">
             <div className="quick-info">
               <p>
-                Fullstack developer with knowledge knowledge on popular
-                frameworks (React, Angular, ...), experience working on large
-                projects and providing qualtiy work, and the ability to pick up
-                new technologies rapidly.
+                Software Engineer with knowledge knowledge on popular frameworks
+                (React, Angular, ...), experience working on large projects and
+                providing qualtiy work, and the ability to pick up new
+                technologies rapidly.
               </p>
               <br />
             </div>
@@ -64,7 +64,7 @@ const About = () => {
         <div className="download-cv">
           <div className="time-working">
             <div className="time-work-item">
-              <h2>02</h2>
+              <h2>4</h2>
               <p>Years Experience</p>
             </div>
             <div className="time-work-item">
@@ -78,7 +78,7 @@ const About = () => {
           </div>
           <div className="cv-down-btn">
             <DownloadButton
-              link="/Manvir Rai Resume.pdf"
+              link="/Manvir - Rai - Resume.pdf"
               styleName="contact-me-btn"
               btnIcon={<GetAppIcon fontSize="large" />}
             >
