@@ -78,7 +78,7 @@ const About = () => {
           </div>
           <div className="cv-down-btn">
             <DownloadButton
-              link="/Manvir - Rai - Resume.pdf"
+              link="/Manvir Rai Resume.pdf"
               styleName="contact-me-btn"
               btnIcon={<GetAppIcon fontSize="large" />}
             >
